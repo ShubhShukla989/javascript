@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style =" background-color: black; color: aliceblue; " >
+    <div class="parent" >
+    <div class="day">monday</div>
+    <div class="day">tuesady</div>
+    <div class="day">wednesday</div>
+    <div class="day">thrusday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+        
+    }
+    parent.children[1].style.color = "red";
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    console.log("NODES:",parent.childNodes); // it will show all the nodes including text nodes
+    console.log("ELEMENT NODES:",parent.children); // it will show only element nodes
+    
+    
+    
+    
+    
+</script>
+</html>
