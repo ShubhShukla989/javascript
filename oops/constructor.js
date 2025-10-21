@@ -48,5 +48,5 @@ function Drink(name){
     }
     this.name= name;
 }
-let button=  Drink("Coffee");
-//  console.log(button);
+let button= new Drink("Coffee");
+ console.log(button);
